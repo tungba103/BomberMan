@@ -1,4 +1,11 @@
 
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(Ğ÷‘¢úÿÿÿÿ
+f	java:S116"QRename this field "_frame" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¿ß
+[
+java:S3252("EUse static access with "javax.swing.SwingConstants" for "HORIZONTAL".(œãÑ‰
+<
+java:S1905:"&Remove this unnecessary cast to "int".(Í„ş¼
+S	java:S106="9Replace this use of System.out or System.err by a logger.(ßä†îşÿÿÿÿ
+k	java:S116F"QRename this field "_frame" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äìÕŒüÿÿÿÿ
+m
+java:S1104F"RMake _frame a static final constant or non-public and provide accessors if needed.(äìÕŒüÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Úâ—øÿÿÿÿ

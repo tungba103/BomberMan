@@ -1,4 +1,9 @@
 
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ôØù˜ıÿÿÿÿ
+k	java:S1161"QRename this field "_frame" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äìÕŒüÿÿÿÿ
+`
+java:S1192""KDefine a constant instead of duplicating this literal "Top Scores" 3 times.(ºçâN
+l
+java:S1104"QMake frame a static final constant or non-public and provide accessors if needed.(Ãü‰ƒüÿÿÿÿ
+m
+java:S11041"RMake _frame a static final constant or non-public and provide accessors if needed.(äìÕŒüÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Úâ—øÿÿÿÿ

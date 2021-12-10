@@ -1,14 +1,10 @@
 package com.GUI;
 
+import com.GUI.menu.Menu;
+import com.Game;
 import javax.swing.JFrame;
-
 import java.awt.BorderLayout;
-
-import javax.swing.JFrame;
 import javax.swing.JPanel;
-
-import com.carlosflorencio.bomberman.Game;
-import com.carlosflorencio.bomberman.gui.menu.Menu;
 
 public class Frame extends JFrame {
 

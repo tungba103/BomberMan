@@ -2,6 +2,7 @@ package com.Entities;
 
 import com.Entities.Tiles.BrickTile;
 
+import com.Graphics.Screen;
 import java.util.LinkedList;
 
 public class LayeredEntity extends Entity {
@@ -38,6 +39,7 @@ public class LayeredEntity extends Entity {
   public void addBeforeTop(Entity e) {
     entities.add(entities.size() - 1, e);
   }
+
 
   @Override
   public boolean collide(Entity e) {

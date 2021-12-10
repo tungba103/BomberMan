@@ -118,32 +118,32 @@ public class FileLevel extends Level {
                 board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
                 break;
             case 'p':
-                board.addMob( new Player(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board) );
+                board.addMob( new Player(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILES_SIZE, board) );
                 Screen.setOffset(0, 0);
 
                 board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
                 break;
             //Enemies
-            case '1':
-                board.addMob( new Balloom(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-                break;
-            case '2':
-                board.addMob( new Oneal(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-                break;
-            case '3':
-                board.addMob( new Doll(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-                break;
-            case '4':
-                board.addMob( new Minvo(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-                break;
-            case '5':
-                board.addMob( new Kondoria(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-                break;
+//            case '1':
+//                board.addMob( new Balloom(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
+//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+//                break;
+//            case '2':
+//                board.addMob( new Oneal(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
+//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+//                break;
+//            case '3':
+//                board.addMob( new Doll(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
+//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+//                break;
+//            case '4':
+//                board.addMob( new Minvo(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
+//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+//                break;
+//            case '5':
+//                board.addMob( new Kondoria(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
+//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+//                break;
             default:
                 board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
                 break;

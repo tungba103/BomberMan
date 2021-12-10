@@ -1,15 +1,16 @@
 package com.Entities;
 
 import com.Graphics.Screen;
+import java.awt.Color;
 
 public class Message extends Entity{
 
     protected String message;
     protected int duration;
-    protected int color;
+    protected Color color;
     protected int size;
 
-    public Message(String message, double x, double y, int duration, int color, int size) {
+    public Message(String message, double x, double y, int duration, Color color, int size) {
         this.x = x;
         this.y = y;
         this.message = message;
@@ -30,13 +31,15 @@ public class Message extends Entity{
         return message;
     }
 
-    public int getColor() {
+    public Color getColor() {
         return color;
     }
 
     public int getSize() {
         return size;
     }
+
+
 
     @Override
     public boolean collide(Entity e) {

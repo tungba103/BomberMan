@@ -1,21 +1,24 @@
 
 k
-java:S3008"PRename this field "SCALE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹´´÷ùÿÿÿÿ
+java:S3008"PRename this field "SCALE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹´´÷ùÿÿÿÿ
 q
-java:S3008"VRename this field "SCREENDELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßıë—ûÿÿÿÿ
+java:S3008!"VRename this field "SCREENDELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßıë—ûÿÿÿÿ
 j
-java:S1845"TRename field "bombRate" to prevent any misunderstanding/clash with field "BOMBRATE".(ñúïõ
+java:S1845$"TRename field "bombRate" to prevent any misunderstanding/clash with field "BOMBRATE".(ñúïõ
 m
-java:S1845"XRename field "bombRadius" to prevent any misunderstanding/clash with field "BOMBRADIUS".(ÂÓÜg
+java:S1845%"XRename field "bombRadius" to prevent any misunderstanding/clash with field "BOMBRADIUS".(ÂÓÜg
 u
-java:S1845"ZRename field "playerSpeed" to prevent any misunderstanding/clash with field "PLAYERSPEED".(ÊĞöŒøÿÿÿÿ
+java:S1845&"ZRename field "playerSpeed" to prevent any misunderstanding/clash with field "PLAYERSPEED".(ÊĞöŒøÿÿÿÿ
 u
-java:S1845""ZRename field "screenDelay" to prevent any misunderstanding/clash with field "SCREENDELAY".(£ÓøÁúÿÿÿÿ
-E
-java:S1068)"*Remove this unused "screen" private field.(‚¿üùÿÿÿÿ
-?
-java:S1068*")Remove this unused "frame" private field.(«„œÇ
+java:S1845*"ZRename field "screenDelay" to prevent any misunderstanding/clash with field "SCREENDELAY".(£ÓøÁúÿÿÿÿ
+D
+java:S19485"'Make "image" transient or serializable.(Ú©Ç†8ôÓ—’Ú/
+{
+java:S3012P"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ñÉ©ˆùÿÿÿÿ8öÃÕ‘Ú/
+N
+java:S1135\"2Complete the task associated to this TODO comment.(»–8ÿÃÕ‘Ú/
+]	java:S125o"<This block of commented-out lines of code should be removed.(àÚÀåùÿÿÿÿ8–ÄÕ‘Ú/
 l
-java:S1104"QMake SCALE a static final constant or non-public and provide accessors if needed.(¹´´÷ùÿÿÿÿ
+java:S1104"QMake SCALE a static final constant or non-public and provide accessors if needed.(¹´´÷ùÿÿÿÿ
 F
-java:S1444"+Make this "public static SCALE" field final(¹´´÷ùÿÿÿÿ
+java:S1444"+Make this "public static SCALE" field final(¹´´÷ùÿÿÿÿ

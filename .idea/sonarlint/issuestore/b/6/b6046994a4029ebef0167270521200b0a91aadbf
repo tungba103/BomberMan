@@ -1,5 +1,9 @@
 
 4
-java:S1659"Declare "y" on a separate line.(¢Æš
+java:S1659	"Declare "y" on a separate line.(¢Æš
 
+t
+java:S3038"R"render" is defined in the "IRender" interface and can be removed from this class.(òº‘ïûÿÿÿÿ8¸•Á“Ú/
+t
+java:S3038"R"update" is defined in the "IRender" interface and can be removed from this class.(òº‘ïûÿÿÿÿ8Ç•Á“Ú/
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚Êõê
