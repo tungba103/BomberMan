@@ -2,6 +2,7 @@ package com;
 
 import com.GUI.Frame;
 import com.Graphics.Screen;
+import com.input.Keyboard;
 
 public class Game {
 

@@ -1,0 +1,19 @@
+
+6
+java:S1659o" Declare "ya" on a separate line.(ˆƒœÚ
+C
+java:S1125½"'Remove the unnecessary boolean literal.(Õ‡ŠÏıÿÿÿÿ
+R	java:S125Î"<This block of commented-out lines of code should be removed.(ÅºĞ
+J
+java:S1144)"4Remove this unused private "detectPlaceBomb" method.(İÌñ
+E
+java:S1144;"/Remove this unused private "clearBombs" method.(ÅŠ±ä
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(©¦Åúÿÿÿÿ
+o
+java:S1104"TMake powerups a static final constant or non-public and provide accessors if needed.(©¦Åúÿÿÿÿ
+I
+java:S1444".Make this "public static powerups" field final(©¦Åúÿÿÿÿ
+W
+java:S2184‚"@Cast one of the operands of this integer division to a "double".(”­ñ¯
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¥½Ş

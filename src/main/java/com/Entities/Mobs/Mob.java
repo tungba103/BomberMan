@@ -5,7 +5,7 @@ import com.Board;
 import com.Game;
 import com.Graphics.Screen;
 
-public class Mob extends Entity {
+public abstract class Mob extends Entity {
 
     protected Board board;
     protected int direction = -1;

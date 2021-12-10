@@ -1,0 +1,17 @@
+
+k	java:S116"QRename this field "_frame" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÛ´“úÿÿÿÿ
+œ
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(†§şıÿÿÿÿ
+œ
+java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›ĞêÕûÿÿÿÿ
+œ
+java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Šá® şÿÿÿÿ
+œ
+java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ô—»ûÿÿÿÿ
+—
+java:S1186E"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£íÂ´
+g
+java:S3252&"LUse static access with "javax.swing.WindowConstants" for "DISPOSE_ON_CLOSE".(ñ°˜ úÿÿÿÿ
+>
+java:S1604"(Make this anonymous inner class a lambda(Èú†
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò™€Áûÿÿÿÿ

@@ -10,6 +10,7 @@ import com.Entities.Tiles.Powerups.PowerupFlames;
 import com.Entities.Tiles.Powerups.PowerupSpeed;
 import com.Entities.Tiles.WallTile;
 import com.Entities.LayeredEntity;
+import com.Exceptions.LoadLevelException;
 import com.Game;
 import com.Graphics.Screen;
 import com.Graphics.Sprite;

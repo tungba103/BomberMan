@@ -2,7 +2,7 @@ package com.Graphics;
 
 public class Sprite {
 
-    public static Sprite grass;
+  public static Sprite grass;
   public static Sprite playerright;
   public static Sprite playerdead1;
   public static Sprite explosionvertical2;
@@ -15,11 +15,11 @@ public class Sprite {
   public static Sprite bombexploded2;
   public static Object bomb1;
   public static Object bomb2;
-    public static Sprite wall;
+  public static Sprite wall;
   public static Sprite brick;
   public static Sprite powerupbombs;
   public static Sprite portal;
-    public static Sprite powerupflames;
+  public static Sprite powerupflames;
   public static Sprite powerupspeed;
   public final int SIZE;
   private int x, y;

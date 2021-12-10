@@ -1,6 +1,7 @@
 package com.Levels;
 
 import com.Board;
+import com.Exceptions.LoadLevelException;
 
 public abstract class Level implements ILevel {
 

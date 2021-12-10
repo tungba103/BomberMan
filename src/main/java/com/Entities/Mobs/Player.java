@@ -7,9 +7,8 @@ import com.Entities.Message;
 import com.Entities.Tiles.Powerups.Powerup;
 import com.Board;
 import com.Game;
-import com.Graphics.Screen;
 import com.Graphics.Sprite;
-import com.Keyboard;
+import com.input.Keyboard;
 import com.Levels.Coordinates;
 
 import java.util.ArrayList;

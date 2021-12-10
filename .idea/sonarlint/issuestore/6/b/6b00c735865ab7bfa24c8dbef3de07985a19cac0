@@ -1,0 +1,21 @@
+
+k
+java:S3008"PRename this field "SCALE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹´´÷ùÿÿÿÿ
+q
+java:S3008"VRename this field "SCREENDELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßıë—ûÿÿÿÿ
+j
+java:S1845"TRename field "bombRate" to prevent any misunderstanding/clash with field "BOMBRATE".(ñúïõ
+m
+java:S1845"XRename field "bombRadius" to prevent any misunderstanding/clash with field "BOMBRADIUS".(ÂÓÜg
+u
+java:S1845"ZRename field "playerSpeed" to prevent any misunderstanding/clash with field "PLAYERSPEED".(ÊĞöŒøÿÿÿÿ
+u
+java:S1845""ZRename field "screenDelay" to prevent any misunderstanding/clash with field "SCREENDELAY".(£ÓøÁúÿÿÿÿ
+E
+java:S1068)"*Remove this unused "screen" private field.(‚¿üùÿÿÿÿ
+?
+java:S1068*")Remove this unused "frame" private field.(«„œÇ
+l
+java:S1104"QMake SCALE a static final constant or non-public and provide accessors if needed.(¹´´÷ùÿÿÿÿ
+F
+java:S1444"+Make this "public static SCALE" field final(¹´´÷ùÿÿÿÿ

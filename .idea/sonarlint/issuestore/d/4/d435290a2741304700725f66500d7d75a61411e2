@@ -1,0 +1,13 @@
+
+@
+java:S1659"%Declare "sprite2" on a separate line.(Ã·Í×üÿÿÿÿ
+<	java:S131""Add a default case to this switch.(Æóõµýÿÿÿÿ
+B
+java:S1125"'Remove the unnecessary boolean literal.(¶Ü¹¸ÿÿÿÿÿ
+B
+java:S1125"'Remove the unnecessary boolean literal.(¶Ü¹¸ÿÿÿÿÿ
+B
+java:S1125$"'Remove the unnecessary boolean literal.(¶Ü¹¸ÿÿÿÿÿ
+B
+java:S1125+"'Remove the unnecessary boolean literal.(¶Ü¹¸ÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡Ð’å

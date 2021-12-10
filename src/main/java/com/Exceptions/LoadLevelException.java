@@ -1,4 +1,4 @@
-package com.Levels;
+package com.Exceptions;
 
 public class LoadLevelException extends Exception {
     public LoadLevelException() {

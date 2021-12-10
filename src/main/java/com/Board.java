@@ -11,8 +11,9 @@ import com.Graphics.IRender;
 import com.Graphics.Screen;
 import com.Levels.FileLevel;
 import com.Levels.Level;
-import com.Levels.LoadLevelException;
+import com.Exceptions.LoadLevelException;
 
+import com.input.Keyboard;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
