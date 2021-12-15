@@ -4,9 +4,11 @@ import com.Entities.AnimatedEntity;
 import com.Entities.Entity;
 import com.Entities.Mobs.Mob;
 import com.Board;
+import com.Entities.Mobs.Player;
 import com.Game;
 import com.Graphics.Screen;
 import com.Graphics.Sprite;
+import com.Levels.Coordinates;
 
 public class Bomb extends AnimatedEntity {
     protected double timeToExplode = 120; // = 2 seconds
@@ -21,11 +23,13 @@ public class Bomb extends AnimatedEntity {
         this.x = x;
         this.y = y;
         this.board = board;
-        sprite = Sprite.bomb;
+        this.sprite = Sprite.bomb;
     }
 
     public void renderExplosions(Screen screen) {
-
+        for (int i = 0; i < this.explosions.length; i++) {
+            this.explosions[i].render(screen);
+        }
     }
 
     public void explode() {
@@ -33,26 +37,26 @@ public class Bomb extends AnimatedEntity {
     }
 
     protected void explosion() {
-        allowedToPassThru = true;
-        exploded = true;
+        this.allowedToPassThru = true;
+        this.exploded = true;
 
-        Mob a = board.getMobAt(x, y);
+        Mob a = this.board.getMobAt(x, y);
         if(a != null)  {
             a.kill();
         }
 
-        explosions = new DirectionalExplosion[4];
+        this.explosions = new DirectionalExplosion[4];
 
-        for (int i = 0; i < explosions.length; i++) {
-            explosions[i] = new DirectionalExplosion((int)x, (int)y, i, Game.getBombRadius(), board);
+        for (int i = 0; i < this.explosions.length; i++) {
+            this.explosions[i] = new DirectionalExplosion((int)x, (int)y, i, Game.getBombRadius(), board);
         }
     }
 
     public Explosion explosionAt(int x, int y) {
-        if(!exploded) return null;
+        if(!this.exploded) return null;
 
-        for (int i = 0; i < explosions.length; i++) {
-            if(explosions[i] == null) return null;
+        for (int i = 0; i < this.explosions.length; i++) {
+            if(this.explosions[i] == null) return null;
             Explosion e = explosions[i].explosionAt(x, y);
             if(e != null) return e;
         }
@@ -61,7 +65,7 @@ public class Bomb extends AnimatedEntity {
     }
 
     public boolean isExploded() {
-        return exploded;
+        return this.exploded;
     }
 
     public void updateExplosions() {
@@ -105,6 +109,23 @@ public class Bomb extends AnimatedEntity {
 
     @Override
     public boolean collide(Entity e) {
+
+        if(e instanceof Player) {
+            double diffX = e.getX() - Coordinates.tileToPixel(getX());
+            double diffY = e.getY() - Coordinates.tileToPixel(getY());
+
+            if(!(diffX >= -10 && diffX < 16 && diffY >= 1 && diffY <= 28)) { // differences to see if the player has moved out of the bomb, tested values
+                this.allowedToPassThru = false;
+            }
+
+            return this.allowedToPassThru;
+        }
+
+        if(e instanceof DirectionalExplosion) {
+            explode();
+            return true;
+        }
+
         return false;
     }
 }

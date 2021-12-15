@@ -5,6 +5,7 @@ import com.Entities.Bomb.Bomb;
 import com.Entities.Bomb.DirectionalExplosion;
 import com.Entities.Entity;
 import com.Entities.Message;
+import com.Entities.Mobs.enemy.Enemy;
 import com.Entities.Tiles.Powerups.Powerup;
 import com.Game;
 import com.Graphics.Screen;
@@ -202,10 +203,10 @@ public class Player extends Mob {
             return false;
         }
 
-//        if(e instanceof Enemy) {
-//            kill();
-//            return true;
-//        }
+        if(e instanceof Enemy) {
+            kill();
+            return true;
+        }
 
         return true;
     }

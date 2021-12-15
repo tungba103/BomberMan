@@ -1,0 +1,12 @@
+
+^
+java:S1659"CDeclare "height" and all following declarations on a separate line.(ïåÓĞúÿÿÿÿ
+T
+java:S5993"9Change the visibility of this constructor to "protected".(“Óïªûÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(æÆ‹Ä
+v
+java:S3038"T"loadLevel" is defined in the "ILevel" interface and can be removed from this class.(òº‘ïûÿÿÿÿ8ÈÔËùÛ/
+/
+java:S1700"Rename field "level"(ïåÓĞúÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğ¨†¨

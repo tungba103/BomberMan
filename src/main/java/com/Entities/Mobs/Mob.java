@@ -4,6 +4,7 @@ import com.Entities.AnimatedEntity;
 import com.Board;
 import com.Entities.Entity;
 import com.Game;
+import com.Graphics.Screen;
 
 public abstract class Mob extends AnimatedEntity {
 
@@ -18,6 +19,11 @@ public abstract class Mob extends AnimatedEntity {
         this.y = y;
         this.board = board;
     }
+    @Override
+    public abstract void update();
+
+    @Override
+    public abstract void render(Screen screen);
 
     protected abstract void calculateMove();
 
@@ -49,8 +55,8 @@ public abstract class Mob extends AnimatedEntity {
         return (this.y * Game.SCALE) - (this.sprite.SIZE / 2 * Game.SCALE);
     }
 
-    @Override
-    public boolean collide(Entity e) {
-        return false;
-    }
+//    @Override
+//    public boolean collide(Entity e) {
+//        return false;
+//    }
 }

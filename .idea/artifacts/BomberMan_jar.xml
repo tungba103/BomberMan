@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BomberMan:jar">
+    <output-path>$PROJECT_DIR$/../BomberManDeploy</output-path>
+    <root id="archive" name="BomberMan.jar">
+      <element id="module-output" name="BomberMan" />
+    </root>
+  </artifact>
+</component>

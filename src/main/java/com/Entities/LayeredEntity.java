@@ -1,7 +1,6 @@
 package com.Entities;
 
-import com.Entities.Tiles.BrickTile;
-
+import com.Entities.Tiles.Destroyable.DestroyableTile;
 import com.Graphics.Screen;
 import java.util.LinkedList;
 
@@ -17,8 +16,8 @@ public class LayeredEntity extends Entity {
       this.entities.add(entities[i]);
 
       if (i > 1) { //Add to destroyable tiles the bellow sprite for rendering in explosion
-        if (entities[i] instanceof BrickTile) {
-          ((BrickTile) entities[i]).addBelowSprite(entities[i - 1].getSprite());
+        if (entities[i] instanceof DestroyableTile) {
+          ((DestroyableTile) entities[i]).addBelowSprite(entities[i - 1].getSprite());
         }
       }
     }

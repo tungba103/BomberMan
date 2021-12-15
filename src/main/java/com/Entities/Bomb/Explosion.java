@@ -2,6 +2,7 @@ package com.Entities.Bomb;
 
 import com.Entities.Entity;
 import com.Board;
+import com.Entities.Mobs.Mob;
 import com.Graphics.Screen;
 import com.Graphics.Sprite;
 
@@ -62,6 +63,10 @@ public class Explosion extends Entity {
 
     @Override
     public boolean collide(Entity e) {
-        return false;
+        if (e instanceof Mob) {
+            ((Mob) e).kill();
+        }
+
+        return true;
     }
 }

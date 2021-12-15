@@ -1,0 +1,15 @@
+
+i	java:S116"TRename this field "MAX_STEPS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âœé
+O
+java:S5993"9Change the visibility of this constructor to "protected".(‘®ÖĞ
+=
+java:S11256"'Remove the unnecessary boolean literal.(«ßØ
+6
+java:S1659X" Declare "ya" on a separate line.(ˆƒœÚ
+;
+java:S1659x" Declare "yr" on a separate line.(Àïõ´úÿÿÿÿ
+>
+java:S1125Ÿ"'Remove the unnecessary boolean literal.(ÎöšÈ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü“ı…
+Y
+java:S2589;"7Remove this expression which always evaluates to "true"(«ª¤Ìúÿÿÿÿ8ù¢õÛ/

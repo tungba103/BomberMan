@@ -7,7 +7,7 @@ import com.Entities.Mobs.enemy.Doll;
 import com.Entities.Mobs.enemy.Kondoria;
 import com.Entities.Mobs.enemy.Minvo;
 import com.Entities.Mobs.enemy.Oneal;
-import com.Entities.Tiles.BrickTile;
+import com.Entities.Tiles.Destroyable.BrickTile;
 import com.Entities.Tiles.GrassTile;
 import com.Entities.Tiles.PortalTile;
 import com.Entities.Tiles.Powerups.PowerupBombs;

@@ -1,0 +1,12 @@
+
+H
+java:S1135H"2Complete the task associated to this TODO comment.(éØÑ
+B
+java:S1125Q"'Remove the unnecessary boolean literal.(ûØÆ˜ıÿÿÿÿ
+B
+java:S1125\"'Remove the unnecessary boolean literal.(ûØÆ˜ıÿÿÿÿ
+B
+java:S1125g"'Remove the unnecessary boolean literal.(ûØÆ˜ıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğ¨†¨
+g
+java:S2095'"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(úÓû‡ùÿÿÿÿ
