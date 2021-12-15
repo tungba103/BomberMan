@@ -1,5 +1,6 @@
 package com.Entities.Bomb;
 
+import com.Entities.AnimatedEntity;
 import com.Entities.Entity;
 import com.Entities.Mobs.Mob;
 import com.Board;
@@ -7,8 +8,8 @@ import com.Game;
 import com.Graphics.Screen;
 import com.Graphics.Sprite;
 
-public class Bomb extends Entity {
-    protected double delayTime = 120; // = 2 seconds
+public class Bomb extends AnimatedEntity {
+    protected double timeToExplode = 120; // = 2 seconds
     public int timeAfter = 20; //time to explosions disapear
 
     protected Board board;
@@ -28,7 +29,7 @@ public class Bomb extends Entity {
     }
 
     public void explode() {
-        delayTime = 0;
+        this.timeToExplode = 0;
     }
 
     protected void explosion() {
@@ -61,6 +62,44 @@ public class Bomb extends Entity {
 
     public boolean isExploded() {
         return exploded;
+    }
+
+    public void updateExplosions() {
+        for (int i = 0; i < this.explosions.length; i++) {
+            this.explosions[i].update();
+        }
+    }
+    @Override
+    public void update() {
+        if(this.timeToExplode > 0)
+            this.timeToExplode--;
+        else {
+            if(!this.exploded)
+                explosion();
+            else
+                updateExplosions();
+
+            if(this.timeAfter > 0)
+                this.timeAfter--;
+            else
+                remove();
+        }
+
+        animate();
+    }
+
+    @Override
+    public void render(Screen screen) {
+        if(this.exploded) {
+            this.sprite =  Sprite.bomb_exploded2;
+            renderExplosions(screen);
+        } else
+            this.sprite = Sprite.movingSprite(Sprite.bomb, Sprite.bomb_1, Sprite.bomb_2, this.animate, 60);
+
+        int xt = (int)this.x << 4;
+        int yt = (int)this.y << 4;
+
+        screen.renderEntity(xt, yt , this);
     }
 
 

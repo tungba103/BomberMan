@@ -3,6 +3,7 @@ package com.Entities.Tiles;
 import com.Entities.Entity;
 import com.Graphics.Screen;
 import com.Graphics.Sprite;
+import com.Levels.Coordinates;
 
 public abstract class Tile extends Entity {
 
@@ -12,10 +13,16 @@ public abstract class Tile extends Entity {
         this.sprite = sprite;
     }
 
-  public abstract void update();
+  @Override
+  public boolean collide(Entity e) {
+    return false;
+  }
 
   @Override
-    public boolean collide(Entity e) {
-        return false;
-    }
+  public void render(Screen screen) {
+    screen.renderEntity( Coordinates.tileToPixel(this.x), Coordinates.tileToPixel(this.y), this);
+  }
+
+  @Override
+  public void update() {}
 }

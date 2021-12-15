@@ -19,7 +19,7 @@ public abstract class Level implements ILevel {
 
     public Level(String path, Board board) throws LoadLevelException {
         loadLevel(path);
-        board = board;
+        this.board = board;
     }
 
     @Override

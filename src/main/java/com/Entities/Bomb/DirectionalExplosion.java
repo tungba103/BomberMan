@@ -75,6 +75,18 @@ public class DirectionalExplosion extends Entity {
     }
 
     @Override
+    public void update() {
+    }
+
+    @Override
+    public void render(Screen screen) {
+
+        for (int i = 0; i < this.explosions.length; i++) {
+            this.explosions[i].render(screen);
+        }
+    }
+
+    @Override
     public boolean collide(Entity e) {
         return false;
     }

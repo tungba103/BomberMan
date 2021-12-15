@@ -1,11 +1,11 @@
 package com.Entities.Mobs;
 
-import com.Entities.Entity;
+import com.Entities.AnimatedEntity;
 import com.Board;
+import com.Entities.Entity;
 import com.Game;
-import com.Graphics.Screen;
 
-public abstract class Mob extends Entity {
+public abstract class Mob extends AnimatedEntity {
 
     protected Board board;
     protected int direction = -1;

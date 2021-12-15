@@ -1,21 +1,22 @@
 package com.Entities.Mobs;
 
+import com.Board;
 import com.Entities.Bomb.Bomb;
 import com.Entities.Bomb.DirectionalExplosion;
 import com.Entities.Entity;
 import com.Entities.Message;
 import com.Entities.Tiles.Powerups.Powerup;
-import com.Board;
 import com.Game;
+import com.Graphics.Screen;
 import com.Graphics.Sprite;
-import com.input.Keyboard;
 import com.Levels.Coordinates;
-
+import com.input.Keyboard;
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Player extends Mob{
+public class Player extends Mob {
 
     private List<Bomb> bombs;
     protected Keyboard input;
@@ -27,9 +28,49 @@ public class Player extends Mob{
 
     public Player(int x, int y, Board board) {
         super(x, y, board);
-        bombs = board.getBombs();
-        input = board.getInput();
-        sprite = Sprite.playerright;
+        this.bombs = board.getBombs();
+        this.input = board.getInput();
+        this.sprite = Sprite.player_right;
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Update & Render
+    |--------------------------------------------------------------------------
+     */
+    @Override
+    public void update() {
+        clearBombs();
+        if(this.alive == false) {
+            afterKill();
+            return;
+        }
+
+        if(this.timeBetweenPutBombs < -7500) this.timeBetweenPutBombs = 0; else this.timeBetweenPutBombs--; //dont let this get tooo big
+
+        animate();
+
+        calculateMove();
+
+        detectPlaceBomb();
+    }
+
+    @Override
+    public void render(Screen screen) {
+        calculateXOffset();
+
+        if(this.alive)
+            chooseSprite();
+        else
+            this.sprite = Sprite.player_dead1;
+
+        screen.renderEntity((int)this.x, (int)this.y - this.sprite.SIZE, this);
+    }
+
+    public void calculateXOffset() {
+        int xScroll = Screen.calculateXOffset(this.board, this);
+        Screen.setOffset(xScroll, 0);
     }
 
 
@@ -39,25 +80,25 @@ public class Player extends Mob{
     |--------------------------------------------------------------------------
      */
     private void detectPlaceBomb() {
-        if(input.space && Game.getBombRate() > 0 && timeBetweenPutBombs < 0) {
+        if(this.input.space && Game.getBombRate() > 0 && this.timeBetweenPutBombs < 0) {
 
-            int xt = Coordinates.pixelToTile(x + sprite.getSize() / 2);
-            int yt = Coordinates.pixelToTile( (y + sprite.getSize() / 2) - sprite.getSize() ); //subtract half player height and minus 1 y position
+            int xt = Coordinates.pixelToTile(this.x + this.sprite.getSize() / 2);
+            int yt = Coordinates.pixelToTile( (this.y + this.sprite.getSize() / 2) - this.sprite.getSize() ); //subtract half player height and minus 1 y position
 
             placeBomb(xt,yt);
             Game.addBombRate(-1);
 
-            timeBetweenPutBombs = 30;
+            this.timeBetweenPutBombs = 30;
         }
     }
 
     protected void placeBomb(int x, int y) {
-        Bomb b = new Bomb(x, y, board);
-        board.addBomb(b);
+        Bomb b = new Bomb(x, y, this.board);
+        this.board.addBomb(b);
     }
 
     private void clearBombs() {
-        Iterator<Bomb> bs = bombs.iterator();
+        Iterator<Bomb> bs = this.bombs.iterator();
 
         Bomb b;
         while(bs.hasNext()) {
@@ -77,26 +118,26 @@ public class Player extends Mob{
      */
     @Override
     public void kill() {
-        if(!alive) return;
+        if(!this.alive) return;
 
-        alive = false;
+        this.alive = false;
 
-        board.addLives(-1);
+        this.board.addLives(-1);
 
-        Message msg = new Message("-1 LIVE", getXMessage(), getYMessage(), 2, 1, 14);
-        board.addMessage(msg);
+        Message msg = new Message("-1 LIVE", getXMessage(), getYMessage(), 2, Color.white, 14);
+        this.board.addMessage(msg);
     }
 
     @Override
     protected void afterKill() {
-        if(timeAfter > 0) --timeAfter;
+        if(this.timeAfter > 0) --this.timeAfter;
         else {
-            if(bombs.size() == 0) {
+            if(this.bombs.size() == 0) {
 
-                if(board.getLives() == 0)
-                    board.endGame();
+                if(this.board.getLives() == 0)
+                    this.board.endGame();
                 else
-                    board.restartLevel();
+                    this.board.restartLevel();
             }
         }
     }
@@ -109,16 +150,16 @@ public class Player extends Mob{
     @Override
     protected void calculateMove() {
         int xa = 0, ya = 0;
-        if(input.up) ya--;
-        if(input.down) ya++;
-        if(input.left) xa--;
-        if(input.right) xa++;
+        if(this.input.up) ya--;
+        if(this.input.down) ya++;
+        if(this.input.left) xa--;
+        if(this.input.right) xa++;
 
         if(xa != 0 || ya != 0)  {
             move(xa * Game.getPlayerSpeed(), ya * Game.getPlayerSpeed());
-            moving = true;
+            this.moving = true;
         } else {
-            moving = false;
+            this.moving = false;
         }
 
     }
@@ -126,10 +167,10 @@ public class Player extends Mob{
     @Override
     public boolean canMove(double x, double y) {
         for (int c = 0; c < 4; c++) { //colision detection for each corner of the player
-            double xt = ((x + x) + c % 2 * 11) / Game.TILESSIZE; //divide with tiles size to pass to tile coordinate
-            double yt = ((y + y) + c / 2 * 12 - 13) / Game.TILESSIZE; //these values are the best from multiple tests
+            double xt = ((this.x + x) + c % 2 * 11) / Game.TILES_SIZE; //divide with tiles size to pass to tile coordinate
+            double yt = ((this.y + y) + c / 2 * 12 - 13) / Game.TILES_SIZE; //these values are the best from multiple tests
 
-            Entity a = board.getEntity(xt, yt, this);
+            Entity a = this.board.getEntity(xt, yt, this);
 
             if(!a.collide(this))
                 return false;
@@ -140,17 +181,17 @@ public class Player extends Mob{
 
     @Override
     public void move(double xa, double ya) {
-        if(xa > 0) direction = 1;
-        if(xa < 0) direction = 3;
-        if(ya > 0) direction = 2;
-        if(ya < 0) direction = 0;
+        if(xa > 0) this.direction = 1;
+        if(xa < 0) this.direction = 3;
+        if(ya > 0) this.direction = 2;
+        if(ya < 0) this.direction = 0;
 
         if(canMove(0, ya)) { //separate the moves for the player can slide when is colliding
-            y += ya;
+            this.y += ya;
         }
 
         if(canMove(xa, 0)) {
-            x += xa;
+            this.x += xa;
         }
     }
 
@@ -161,10 +202,10 @@ public class Player extends Mob{
             return false;
         }
 
-        if(e instanceof Enemy) {
-            kill();
-            return true;
-        }
+//        if(e instanceof Enemy) {
+//            kill();
+//            return true;
+//        }
 
         return true;
     }
@@ -177,23 +218,23 @@ public class Player extends Mob{
     public void addPowerup(Powerup p) {
         if(p.isRemoved()) return;
 
-        powerups.add(p);
+        this.powerups.add(p);
 
         p.setValues();
     }
 
     public void clearUsedPowerups() {
         Powerup p;
-        for (int i = 0; i < powerups.size(); i++) {
-            p = powerups.get(i);
+        for (int i = 0; i < this.powerups.size(); i++) {
+            p = this.powerups.get(i);
             if(p.isActive() == false)
-                powerups.remove(i);
+                this.powerups.remove(i);
         }
     }
 
     public void removePowerups() {
-        for (int i = 0; i < powerups.size(); i++) {
-            powerups.remove(i);
+        for (int i = 0; i < this.powerups.size(); i++) {
+            this.powerups.remove(i);
         }
     }
 
@@ -202,40 +243,39 @@ public class Player extends Mob{
     | Mob Sprite
     |--------------------------------------------------------------------------
      */
-    /*
     private void chooseSprite() {
-        switch(direction) {
+        switch(this.direction) {
             case 0:
-                sprite = Sprite.playerup;
-                if(moving) {
-                    sprite = Sprite.movingSprite(Sprite.playerup1, Sprite.playerup2, animate, 20);
+                this.sprite = Sprite.player_up;
+                if(this.moving) {
+                    this.sprite = Sprite.movingSprite(Sprite.player_up_1, Sprite.player_up_2, this.animate, 20);
                 }
                 break;
             case 1:
-                sprite = Sprite.playerright;
-                if(moving) {
-                    sprite = Sprite.movingSprite(Sprite.playerright1, Sprite.playerright2, animate, 20);
+                this.sprite = Sprite.player_right;
+                if(this.moving) {
+                    this.sprite = Sprite.movingSprite(Sprite.player_right_1, Sprite.player_right_2, this.animate, 20);
                 }
                 break;
             case 2:
-                sprite = Sprite.playerdown;
-                if(moving) {
-                    sprite = Sprite.movingSprite(Sprite.playerdown1, Sprite.playerdown2, animate, 20);
+                this.sprite = Sprite.player_down;
+                if(this.moving) {
+                    this.sprite = Sprite.movingSprite(Sprite.player_down_1, Sprite.player_down_2, this.animate, 20);
                 }
                 break;
             case 3:
-                sprite = Sprite.playerleft;
-                if(moving) {
-                    sprite = Sprite.movingSprite(Sprite.playerleft1, Sprite.playerleft2, animate, 20);
+                this.sprite = Sprite.player_left;
+                if(this.moving) {
+                    this.sprite = Sprite.movingSprite(Sprite.player_left_1, Sprite.player_left_2, this.animate, 20);
                 }
                 break;
             default:
-                sprite = Sprite.playerright;
-                if(moving) {
-                    sprite = Sprite.movingSprite(Sprite.playerright1, Sprite.playerright2, animate, 20);
+                this.sprite = Sprite.player_right;
+                if(this.moving) {
+                    this.sprite = Sprite.movingSprite(Sprite.player_right_1, Sprite.player_right_2, this.animate, 20);
                 }
                 break;
         }
     }
-     */
 }
+

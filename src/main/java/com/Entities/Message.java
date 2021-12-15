@@ -18,7 +18,13 @@ public class Message extends Entity{
         this.color = color;
         this.size = size;
     }
+    @Override
+    public void update() {
+    }
 
+    @Override
+    public void render(Screen screen) {
+    }
     public int getDuration() {
         return duration;
     }

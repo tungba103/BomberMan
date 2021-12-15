@@ -2,6 +2,11 @@ package com.Levels;
 
 import com.Board;
 import com.Entities.Mobs.Player;
+import com.Entities.Mobs.enemy.Balloom;
+import com.Entities.Mobs.enemy.Doll;
+import com.Entities.Mobs.enemy.Kondoria;
+import com.Entities.Mobs.enemy.Minvo;
+import com.Entities.Mobs.enemy.Oneal;
 import com.Entities.Tiles.BrickTile;
 import com.Entities.Tiles.GrassTile;
 import com.Entities.Tiles.PortalTile;
@@ -30,11 +35,9 @@ public class FileLevel extends Level {
     @Override
     public void loadLevel(String path) throws LoadLevelException {
         try {
-            URL absPath = FileLevel.class.getResource("/" + path);
-
+            URL absPath = new URL("file:/E:/BomberMan/src/main/resources/levels/" + path);
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(absPath.openStream()));
-
             String data = in.readLine();
             StringTokenizer tokens = new StringTokenizer(data);
 
@@ -76,7 +79,7 @@ public class FileLevel extends Level {
                         new BrickTile(x ,y, Sprite.brick));
 
                 if(board.isPowerupUsed(x, y, level) == false) {
-                    layer.addBeforeTop(new PowerupBombs(x, y, level, Sprite.powerupbombs));
+                    layer.addBeforeTop(new PowerupBombs(x, y, level, Sprite.powerup_bombs));
                 }
 
                 board.addEntitie(pos, layer);
@@ -87,7 +90,7 @@ public class FileLevel extends Level {
                         new BrickTile(x ,y, Sprite.brick));
 
                 if(board.isPowerupUsed(x, y, level) == false) {
-                    layer.addBeforeTop(new PowerupSpeed(x, y, level, Sprite.powerupspeed));
+                    layer.addBeforeTop(new PowerupSpeed(x, y, level, Sprite.powerup_speed));
                 }
 
                 board.addEntitie(pos, layer);
@@ -98,7 +101,7 @@ public class FileLevel extends Level {
                         new BrickTile(x ,y, Sprite.brick));
 
                 if(board.isPowerupUsed(x, y, level) == false) {
-                    layer.addBeforeTop(new PowerupFlames(x, y, level, Sprite.powerupflames));
+                    layer.addBeforeTop(new PowerupFlames(x, y, level, Sprite.powerup_flames));
                 }
 
                 board.addEntitie(pos, layer);
@@ -123,27 +126,27 @@ public class FileLevel extends Level {
 
                 board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
                 break;
-            //Enemies
-//            case '1':
-//                board.addMob( new Balloom(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-//                break;
-//            case '2':
-//                board.addMob( new Oneal(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-//                break;
-//            case '3':
-//                board.addMob( new Doll(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-//                break;
-//            case '4':
-//                board.addMob( new Minvo(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-//                break;
-//            case '5':
-//                board.addMob( new Kondoria(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILESSIZE, board));
-//                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
-//                break;
+//            Enemies
+            case '1':
+                board.addMob( new Balloom(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILES_SIZE, board));
+                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+                break;
+            case '2':
+                board.addMob( new Oneal(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILES_SIZE, board));
+                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+                break;
+            case '3':
+                board.addMob( new Doll(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILES_SIZE, board));
+                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+                break;
+            case '4':
+                board.addMob( new Minvo(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILES_SIZE, board));
+                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+                break;
+            case '5':
+                board.addMob( new Kondoria(Coordinates.tileToPixel(x), Coordinates.tileToPixel(y) + Game.TILES_SIZE, board));
+                board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
+                break;
             default:
                 board.addEntitie(pos, new GrassTile(x, y, Sprite.grass) );
                 break;

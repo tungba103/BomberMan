@@ -1,10 +1,0 @@
-
-p	java:S116"TRename this field "_gamepane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇáÈÎ8Ï³†ûÙ/
-u	java:S116"YRename this field "_containerpane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÊ¥Œ8Ğ³†ûÙ/
-v	java:S116"URename this field "_infopanel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÂ¦ÿÿÿÿÿ8Ğ³†ûÙ/
-q	java:S116"PRename this field "_game" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊâÿÔøÿÿÿÿ8Ğ³†ûÙ/
-k
-java:S3252 "IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ê³†ûÙ/
-r
-java:S1104"UMake _gamepane a static final constant or non-public and provide accessors if needed.(ÇáÈÎ8ş³†ûÙ/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò™€Áûÿÿÿÿ

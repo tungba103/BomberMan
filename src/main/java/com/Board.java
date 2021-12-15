@@ -137,9 +137,9 @@ public class Board implements IRender {
     messages.clear();
 
     try {
-      this.level = new FileLevel("levels/Level" + level + ".txt", this);
+      this.level = new FileLevel("Level" + level + ".txt", this);
       this.entities = new Entity[this.level.getHeight() * this.level.getWidth()];
-
+      System.out.println(this.level);
       this.level.createEntities();
     } catch (LoadLevelException e) {
       endGame(); //failed to load.. so.. no more levels?

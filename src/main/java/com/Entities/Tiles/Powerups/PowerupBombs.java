@@ -3,6 +3,7 @@ package com.Entities.Tiles.Powerups;
 import com.Entities.Entity;
 import com.Entities.Mobs.Player;
 import com.Game;
+import com.Graphics.Screen;
 import com.Graphics.Sprite;
 
 public class PowerupBombs extends Powerup{

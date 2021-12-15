@@ -1,9 +1,0 @@
-
-o	java:S116"URename this field "MAXANIMATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãš€žýÿÿÿÿ
-<
-java:S1170"!Make this final field static too.(Ãš€žýÿÿÿÿ
-u
-java:S1450"ZRemove the "belowSprite" field and declare it as a local variable in the relevant methods.(Œ†Ìûÿÿÿÿ
-J
-java:S1068"/Remove this unused "belowSprite" private field.(Œ†Ìûÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÂïÈ

@@ -5,41 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d95a3403-8210-4cc5-b2be-54ede3ad3881" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e6df7acbf77510a03dabc780ec9713025a939fb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/34f40e88e169cf0871c471cc49abf0df5ca665eb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/383797d16eb8dce444f9902f8036c684af31f1b6" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/Level1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/Level2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/Level3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/Level4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/levels/Level5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/textures/classic.pdn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/textures/classic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/AI/AI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/AI/AILow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/AI/AIMedium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/Balloom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/Doll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/Kondoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/Minvo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/enemy/Oneal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Textures/classic.pdn" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/levels/Level1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/levels/Level2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/levels/Level3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/levels/Level4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/levels/Level5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a7c09ea6ac387307ae80aa1db618e55da0caa3e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e6df7acbf77510a03dabc780ec9713025a939fb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e6df7acbf77510a03dabc780ec9713025a939fb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/34f40e88e169cf0871c471cc49abf0df5ca665eb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/34f40e88e169cf0871c471cc49abf0df5ca665eb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/453884b9c41562cd4b7e11619cc9e22ce1bfdae5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/56b9534561a6b20639bc0f167e347dbd6c2ca23c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57077dfc549775824cca2504dc7f7e3652608e97" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65d9413a0d02cfbeccc07a0d5940f7e7ded82930" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b00c735865ab7bfa24c8dbef3de07985a19cac0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86be0ce0469181e6137800b6cbb590ec82cf4499" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86be0ce0469181e6137800b6cbb590ec82cf4499" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/8782ed9a4d19f9df35494a184430bc2143ee4fd7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c3a5aacdbc6cdfbc48b88b6bafb5b27eee4841b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/9574b02bf9f1bee958767d2c2718ea5fd020ed66" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/973ff43adb409472fc9897b1c31949d47f99d6c1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b27dc57bbaf2e37c35ff9adb034bf882edce3830" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6046994a4029ebef0167270521200b0a91aadbf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6fe31b0c32c171bd3169ae4004da150f4794c82" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bb7b9732cc95ad8dcf9d0879020d4c524d7295ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6fe31b0c32c171bd3169ae4004da150f4794c82" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6fe31b0c32c171bd3169ae4004da150f4794c82" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c53d44aecb982a396c282be3358199553b2b3b73" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c71d5a9ab657c7a1cb1da5bd08bb3fdb54041115" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c96c38eac761d4443b21cc81ab4ae10d9598bf21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd58e297f485251dd25275b9e8287aad1872e69c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d435290a2741304700725f66500d7d75a61411e2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e185874856fee30c7ba60388adf885bfc64ca74d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e429745af557229d5eebfcde9f1b4ece647e54be" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eee1d4a7368aa67d08cd639fe724d95c63240a90" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/BomberMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/BomberMan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Bomb/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Bomb/Bomb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Bomb/DirectionalExplosion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Bomb/DirectionalExplosion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Bomb/Explosion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Bomb/Explosion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/LayeredEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/LayeredEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/Mob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/Mob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Mobs/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Tiles/Powerups/PowerupBombs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Tiles/Powerups/PowerupBombs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Entities/Tiles/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Entities/Tiles/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/GUI/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GUI/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/GUI/menu/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GUI/menu/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/GUI/menu/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GUI/menu/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/GUI/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GUI/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/GUI/menu/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GUI/menu/Option.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Graphics/IRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Graphics/IRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Graphics/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Graphics/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Graphics/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Graphics/Sprite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Levels/FileLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Levels/FileLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Levels/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Levels/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Entities/Mobs/Mob.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Entities/Mobs/Mob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Graphics/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Graphics/Screen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Levels/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Levels/Level.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +104,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/Textures" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -94,6 +121,11 @@
       <recent name="com.Levels" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\BomberMan\src\main\resources\Textures" />
+      <recent name="E:\BomberMan\src\main\resources" />
+      <recent name="E:\BomberMan" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\BomberMan\src\main\resources\Textures" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -115,6 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Demo" />
+      <module name="BomberMan" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpriteSheet" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.Graphics.SpriteSheet" />
       <module name="BomberMan" />
@@ -128,9 +167,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo" />
+      <module name="BomberMan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BomberMan" />
+        <item itemvalue="Application.demo" />
+        <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +205,11 @@
       <workItem from="1639048347765" duration="1724000" />
       <workItem from="1639055212385" duration="1750000" />
       <workItem from="1639103006538" duration="6783000" />
+      <workItem from="1639127188300" duration="3065000" />
+      <workItem from="1639186542151" duration="1171000" />
+      <workItem from="1639456194724" duration="597000" />
+      <workItem from="1639579164356" duration="2445000" />
+      <workItem from="1639588984569" duration="4092000" />
     </task>
     <servers />
   </component>
@@ -171,5 +230,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.MalformedURLException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

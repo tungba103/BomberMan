@@ -42,6 +42,17 @@ public class LayeredEntity extends Entity {
 
 
   @Override
+  public void update() {
+    clearRemoved();
+    getTopEntity().update();
+  }
+
+  @Override
+  public void render(Screen screen) {
+    getTopEntity().render(screen);
+  }
+
+  @Override
   public boolean collide(Entity e) {
     return getTopEntity().collide(e);
   }
