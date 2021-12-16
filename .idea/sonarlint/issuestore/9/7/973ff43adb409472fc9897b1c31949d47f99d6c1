@@ -1,0 +1,13 @@
+
+[
+java:S5993"9Change the visibility of this constructor to "protected".(ˆ‰ñüÿÿÿÿ8éÕÙ÷Ù/
+W	java:S125;"<This block of commented-out lines of code should be removed.(¼“ÄY8Ñ•ŠüÛ/
+L
+java:S1128"0Remove this unused import 'com.Entities.Entity'.(Ò‰Õr8Ñ•ŠüÛ/
+k
+java:S1104"UMake timeAfter a static final constant or non-public and provide accessors if needed.(îÈşü
+]
+java:S21843"@Cast one of the operands of this integer division to a "double".(˜ÈÒÊ8ã˜ƒüÛ/
+b
+java:S21847"@Cast one of the operands of this integer division to a "double".(á…ğŸıÿÿÿÿ8ã˜ƒüÛ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¥½Ş

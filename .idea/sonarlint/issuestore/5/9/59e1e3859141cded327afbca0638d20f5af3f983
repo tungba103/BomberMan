@@ -1,0 +1,9 @@
+
+k	java:S116"VRename this field "MAX_ANIMATE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â×¢ı
+h	java:S116"SRename this field "_animate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹üî
+j	java:S116"URename this field "_destroyed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉãÒä
+t	java:S116"ZRename this field "_timeToDisapear" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¥ÒØûÿÿÿÿ
+l	java:S116"WRename this field "_belowSprite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÚòË
+7
+java:S1170"!Make this final field static too.(Â×¢ı
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ô„‰

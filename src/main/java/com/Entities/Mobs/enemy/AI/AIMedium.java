@@ -4,18 +4,18 @@ import com.Entities.Mobs.Player;
 import com.Entities.Mobs.enemy.Enemy;
 
 public class AIMedium extends AI {
-  Player _player;
-  Enemy _e;
+  Player player;
+  Enemy e;
 
   public AIMedium(Player player, Enemy e) {
-    _player = player;
-    _e = e;
+    this.player = player;
+    this.e = e;
   }
 
   @Override
   public int calculateDirection() {
 
-    if(_player == null)
+    if(this.player == null)
       return random.nextInt(4);
 
     int vertical = random.nextInt(2);
@@ -39,18 +39,18 @@ public class AIMedium extends AI {
   }
 
   protected int calculateColDirection() {
-    if(_player.getXTile() < _e.getXTile())
+    if(this.player.getXTile() < this.e.getXTile())
       return 3;
-    else if(_player.getXTile() > _e.getXTile())
+    else if(this.player.getXTile() > this.e.getXTile())
       return 1;
 
     return -1;
   }
 
   protected int calculateRowDirection() {
-    if(_player.getYTile() < _e.getYTile())
+    if(this.player.getYTile() < this.e.getYTile())
       return 0;
-    else if(_player.getYTile() > _e.getYTile())
+    else if(this.player.getYTile() > this.e.getYTile())
       return 2;
     return -1;
   }

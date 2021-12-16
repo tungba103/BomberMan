@@ -46,7 +46,7 @@ public class Board implements IRender {
     this.input = input;
     this.screen = screen;
 
-    changeLevel(1); //start in level 1
+    changeLevel(3); //start in level 1
   }
 
   /*

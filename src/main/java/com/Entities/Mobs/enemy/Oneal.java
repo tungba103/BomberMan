@@ -27,7 +27,7 @@ public class Oneal extends Enemy {
       case 0:
       case 1:
         if(this.moving)
-          this.sprite = Sprite.movingSprite(Sprite.oneal_right1, Sprite.oneal_right2, Sprite.oneal_right3, this.animate, 60);
+          this.sprite = Sprite.movingSprite(Sprite.oneal_right1, Sprite.oneal_right2, Sprite.oneal_right3, this.  animate, 60);
         else
           this.sprite = Sprite.oneal_left1;
         break;

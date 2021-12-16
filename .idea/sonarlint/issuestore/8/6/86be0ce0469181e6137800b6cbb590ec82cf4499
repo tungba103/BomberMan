@@ -1,0 +1,42 @@
+
+?
+java:S2386"Make this member "protected".(©¦Åúÿÿÿÿ8×•ØûÛ/
+D
+java:S1125."'Remove the unnecessary boolean literal.(«ßØ8æ÷ºôÛ/
+>
+java:S1659™" Declare "ya" on a separate line.(ˆƒœÚ8÷÷ºôÛ/
+S
+java:S2209Ş"5Change this instance-reference to a static reference.(ƒ‡ø8·ËŞôÛ/
+G
+java:S5413è")Verify that "remove()" is used correctly.(Ë»õ8–ØûÛ/
+S
+java:S2209å"5Change this instance-reference to a static reference.(£±Ï‡8µ¦ßôÛ/
+R
+java:S2209æ"5Change this instance-reference to a static reference.(­ ˆR8¶¦ßôÛ/
+J
+java:S1125ç"'Remove the unnecessary boolean literal.(Õ‡ŠÏıÿÿÿÿ8…øºôÛ/
+S
+java:S2209è"5Change this instance-reference to a static reference.(Ë»õ8·¦ßôÛ/
+G
+java:S5413î")Verify that "remove()" is used correctly.(Ë»õ8ˆ–ØûÛ/
+S
+java:S2209í"5Change this instance-reference to a static reference.(£±Ï‡8”ÕßôÛ/
+S
+java:S2209î"5Change this instance-reference to a static reference.(Ë»õ8™ÕßôÛ/
+l
+java:S1871‘"IThis case's code block is the same as the block for the case on line 255.(İ–Ò˜ÿÿÿÿÿ8ÚÂâôÛ/
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(©¦Åúÿÿÿÿ8‹øºôÛ/
+a
+java:S1155ˆ">Use isEmpty() to check whether the collection is empty or not.(áÙ’şÿÿÿÿ8–ØûÛ/
+v
+java:S1104"TMake powerups a static final constant or non-public and provide accessors if needed.(©¦Åúÿÿÿÿ8ÉÄ¿ôÛ/
+P
+java:S1444".Make this "public static powerups" field final(©¦Åúÿÿÿÿ8ËÄ¿ôÛ/
+b
+java:S2184V"@Cast one of the operands of this integer division to a "double".(…µáŞøÿÿÿÿ8–ØûÛ/
+\
+java:S2184W"@Cast one of the operands of this integer division to a "double".(Õ½è!8–ØûÛ/
+^
+java:S2184¬"@Cast one of the operands of this integer division to a "double".(¶ÁŸ­8¾ÂØôÛ/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¥½Ş

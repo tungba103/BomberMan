@@ -4,6 +4,6 @@ public class AILow extends AI{
 
   @Override
   public int calculateDirection() {
-    return 0;
+    return random.nextInt(4);
   }
 }

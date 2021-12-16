@@ -1,0 +1,7 @@
+
+T
+java:S1854	">Remove this useless assignment to local variable "mainwindow".(Ùš´³
+œ
+java:S1130"zRemove the declaration of thrown exception 'com.Exceptions.BombermanException', as it cannot be thrown from method's body.(áÁŒÆûÿÿÿÿ8é¸ÛûÛ/
+E
+java:S1481	"/Remove this unused "mainwindow" local variable.(Ùš´³

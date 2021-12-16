@@ -10,11 +10,11 @@ public abstract class Level implements ILevel {
     protected Board board;
 
     protected static String[] codes = { //TODO: change this code system to actualy load the code from each level.txt
-            "dnibpb5uqy",
-            "cuq0vaxstb",
-            "38y418wriq",
-            "34h8k0chcs",
-            "9qztxh6l4s",
+            "tungba103",
+            "thaiduong007",
+            "tungba103",
+            "uet",
+            "vnu",
     };
 
     public Level(String path, Board board) throws LoadLevelException {

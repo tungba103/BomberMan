@@ -49,7 +49,7 @@ public class Help extends JMenu {
       }
 
       if(e.getActionCommand().equals("About")) {
-        new InfoDialog(_frame, "About", "Version: " + Game.VERSION + "\n Author: Carlos Flor�ncio\n Website: www.carlosflorencio.com", JOptionPane.INFORMATION_MESSAGE);
+        new InfoDialog(_frame, "About", "Version: " + Game.VERSION + "\n Author: Ba Thanh Tung \n Nguyen Thai Duong \n UET VNU", JOptionPane.INFORMATION_MESSAGE);
       }
 
     }

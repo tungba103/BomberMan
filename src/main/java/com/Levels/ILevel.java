@@ -4,5 +4,5 @@ import com.Exceptions.LoadLevelException;
 
 public interface ILevel {
 
-    public void loadLevel(String path) throws LoadLevelException;
+    void loadLevel(String path) throws LoadLevelException;
 }
